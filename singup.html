@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tack Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+
+<style>
+    .containerr {
+        max-width: 400px;
+        margin: 200px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 380px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .error {
+        color: red;
+    }
+
+    #passwordStrength {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<body>
+    <header>
+        <section>
+            <!-- Sing up start -->
+            <div class="container singLogin">
+                <p>tackstore@gmail.com</p>
+                <div class="slbutton">
+                    <button><a href="singup.html">Sing up</a></button>
+                    <button><a href="login.html">Login</a></button>
+                </div>
+            </div>
+            <!-- Sing up end -->
+
+            <!-- Header Part Start -->
+            <nav>
+                <div class="container nabver">
+                    <h1><a href="index.html">Tack Store</a></h1>
+                    <ul style="display: flex;">
+                        <li><a href="index.html">Home</a></li>
+                        <li>About</li>
+                        <li><a href="Product.html">Product</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a id="cardValue" href="addToCart.html"><i class="fa-solid fa-cart-plus"></i> 0</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Header Part End -->
+        </section>
+    </header>
+
+    <div class="containerr">
+        <h2>Create an Account</h2>
+        <form id="signupForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <span class="error" id="usernameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="passwordError"></span>
+                <div id="passwordStrength"></div>
+            </div>
+            <button class="button" type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var passwordStrength = document.getElementById("passwordStrength");
+
+            // Simple email validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById("emailError").innerText = "Invalid email format";
+                return false;
+            } else {
+                document.getElementById("emailError").innerText = "";
+            }
+
+            // Password strength validation
+            var strength = 0;
+            if (password.length >= 8) {
+                strength += 1;
+            }
+            if (password.match(/[a-z]+/)) {
+                strength += 1;
+            }
+            if (password.match(/[A-Z]+/)) {
+                strength += 1;
+            }
+            if (password.match(/[0-9]+/)) {
+                strength += 1;
+            }
+            if (password.match(/[$&+,:;=?@#|'<>.^*()%!-]+/)) {
+                strength += 1;
+            }
+
+            switch (strength) {
+                case 0:
+                case 1:
+                    passwordStrength.innerText = "Weak";
+                    passwordStrength.style.color = "red";
+                    break;
+                case 2:
+                case 3:
+                    passwordStrength.innerText = "Moderate";
+                    passwordStrength.style.color = "orange";
+                    break;
+                case 4:
+                case 5:
+                    passwordStrength.innerText = "Strong";
+                    passwordStrength.style.color = "green";
+                    break;
+            }
+
+            return true;
+        }
+
+        document.querySelector('button').addEventListener('submit', (e) => {
+            e.preventDefault()
+        })
+
+    </script>
+</body>
+
+</html>

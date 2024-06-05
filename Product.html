@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <section>
+            <!-- Sing up start -->
+            <div class="container singLogin">
+                <p>tackstore@gmail.com</p>
+                <div class="slbutton">
+                    <button><a href="singup.html">Sing up</a></button>
+                    <button>Login</button>
+                </div>
+            </div>
+            <!-- Sing up end -->
+
+            <!-- Header Part Start -->
+            <nav>
+                <div class="container nabver">
+                    <h1><a href="index.html">Tack Store</a></h1>
+                    <ul style="display: flex;">
+                        <li><a href="index.html">Home</a></li>
+                        <li>About</li>
+                        <li>Product</li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a id="cardValue" href="addToCart.html"><i class="fa-solid fa-cart-plus"></i> 0</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Header Part End -->
+        </section>
+    </header>
+
+
+    <!-- Product Part Start -->
+    <section class="container">
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1 class="productT">Chekout Tack Store</h1>
+            <!-- <input type="text" class="search" placeholder="Search"> -->
+
+        </div>
+        <section>
+            <div class="procductContainer"></div>
+        </section>
+    </section>
+
+
+    <!-- templet section start-->
+    <template id="productTemplet">
+        <div class="cards" id="cardValue">
+            <article class="information [card]">
+                <span></span>
+                <div class="imgContainer">
+                    <img src="" alt="" class="productImage">
+                </div>
+                <h2 class="productName"></h2>
+
+                <div class="productRting">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="productDescribtion"></p>
+                <div class="pricrElm">
+                    <p class="productPrice"></p>
+                    <del class="productDelPrice"></del>
+                </div>
+
+                <p class="productStoc"></p>
+                <div class="productQuantityElm">
+                    <p class="producProperty">Product Quantity</p>
+
+                    <div class="stoctElm">
+                        <button class="cartIncrement">+</button>
+                        <p class="productQuantity">1</p>
+                        <button class="cartDecrement">-</button>
+                    </div>
+                </div>
+
+                <button class="addTocart">Add To Cart</button>
+            </article>
+        </div>
+    </template>
+    <!-- templet section end -->
+
+    <!-- Product Part End -->
+
+    <!-- Footer Part Start -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="contact">
+                    <span><i class="fas fa-map-marker-alt"></i>123 Street, City, Country</span>
+                    <span><i class="fas fa-phone"></i>+123-456-7890</span>
+                    <span><i class="fas fa-envelope"></i>info@example.com</span>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 YourWebsite. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Part End -->
+
+    <script type="module" src="main2.js"></script>
+</body>
+
+</html>

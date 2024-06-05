@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tack Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <section>
+      <!-- Sing up start -->
+      <div class="container singLogin">
+        <p>tackstore@gmail.com</p>
+        <div class="slbutton">
+          <button><a href="singup.html">Sing up</a></button>
+          <button>Login</button>
+        </div>
+      </div>
+      <!-- Sing up end -->
+
+      <!-- Header Part Start -->
+      <nav>
+        <div class="container nabver">
+          <h1>Tack Store</h1>
+          <ul style="display: flex;">
+            <li>Home</li>
+            <li>About</li>
+            <li><a href="Product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a id="cardValue" href="addToCart.html"><i class="fa-solid fa-cart-plus"></i> 0</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Header Part End -->
+    </section>
+  </header>
+
+  <!-- Bannar part start  -->
+  <main>
+    <section class="container bennar">
+      <div class="contain">
+        <h1>Your Destination For Cutting-Edge Gadgets!</h1>
+        <p>Welcome to Thapa eComStore, your ultimate destination for cutting-edge gadgets! Explore the latest in tech
+          innovation and style with us. Shop now and discover a world of possibilities!</p>
+        <button>Explore Our Products</button>
+      </div>
+      <img class="animationImag" src="./public/vite.svg" alt="">
+    </section>
+    <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+      </defs>
+      <g class="parallax1">
+        <use xlink:href="#gentle-wave" x="50" y="3" fill="#8fb6ff" />
+      </g>
+      <g class="parallax2">
+        <use xlink:href="#gentle-wave" x="50" y="0" fill="#679eff" />
+      </g>
+      <g class="parallax3">
+        <use xlink:href="#gentle-wave" x="50" y="9" fill="#b3d2ff" />
+      </g>
+      <g class="parallax4">
+        <use xlink:href="#gentle-wave" x="50" y="6" fill="#ebf3fe" />
+      </g>
+    </svg>
+  </main>
+  <!-- Bannar part end  -->
+
+  <!-- Product Part Start -->
+  <section class="container">
+    <h1 class="productT">Chekout Tack Store</h1>
+
+    <section>
+      <div class="procductContainer"></div>
+    </section>
+  </section>
+
+
+  <!-- templet section start-->
+  <template id="productTemplet">
+    <div class="cards" id="cardValue">
+      <article class="information [card]">
+        <span></span>
+        <div class="imgContainer">
+          <img src="" alt="" class="productImage">
+        </div>
+        <h2 class="productName"></h2>
+
+        <div class="productRting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="productDescribtion"></p>
+        <div class="pricrElm">
+          <p class="productPrice"></p>
+          <del class="productDelPrice"></del>
+        </div>
+
+        <p class="productStoc"></p>
+        <div class="productQuantityElm">
+          <p class="producProperty">Product Quantity</p>
+
+          <div class="stoctElm">
+            <button class="cartIncrement">+</button>
+            <p class="productQuantity">1</p>
+            <button class="cartDecrement">-</button>
+          </div>
+        </div>
+
+        <button class="addTocart">Add To Cart</button>
+      </article>
+    </div>
+  </template>
+  <!-- templet section end -->
+
+  <!-- Product Part End -->
+
+  <!-- Footer Part Start -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="contact">
+          <span><i class="fas fa-map-marker-alt"></i>123 Street, City, Country</span>
+          <span><i class="fas fa-phone"></i>+123-456-7890</span>
+          <span><i class="fas fa-envelope"></i>info@example.com</span>
+        </div>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Services</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 YourWebsite. All rights reserved.
+    </div>
+  </footer>
+  <!-- Footer Part End -->
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
