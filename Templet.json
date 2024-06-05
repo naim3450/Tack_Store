@@ -69,7 +69,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./public/tablet.png",
+        "image": "./Image/tablet.png",
         "price": 6999,
         "home": true
     },
@@ -80,7 +80,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./public/iphone11.png",
+        "image": "./Image/iphone11.png",
         "price": 7999
     },
     {
@@ -90,7 +90,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./public/laptop.png",
+        "image": "./Image/laptop.png",
         "price": 8999
     },
     {
@@ -100,7 +100,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./public/iphone15.png",
+        "image": "./Image/iphone15.png",
         "price": 9999
     },
     {
@@ -110,7 +110,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./public/pc.png",
+        "image": "./Image/pc.png",
         "price": 10000,
         "home": true
     },
@@ -121,7 +121,7 @@
         "Brand": "xyz",
         "stock": 11000,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./public/phoneWatch.png",
+        "image": "./Image/phoneWatch.png",
         "price": 11000,
         "home": true
     },
@@ -132,7 +132,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./public/headphone.png",
+        "image": "./Image/headphone.png",
         "price": 800
     },
     {
@@ -142,7 +142,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./public/speaker.png",
+        "image": "./Image/speaker.png",
         "price": 14500
     },
     {
@@ -152,7 +152,7 @@
         "Brand": "xyz",
         "stock": 8,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./public/Desktop.png",
+        "image": "./Image/Desktop.png",
         "price": 94500
     }
 ]
