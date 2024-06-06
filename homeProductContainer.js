@@ -1,6 +1,7 @@
 import { addtocart } from "./addtocart"
 import { homeQuantityToggle } from "./homeQuantityToggle"
 import { animationCart } from './animationCart';
+import { samllCart } from "./smallCart";
 
 const procductContainer = document.querySelector('.procductContainer')
 const productTemplet = document.getElementById('productTemplet')
@@ -31,6 +32,7 @@ export const homeProductContainer = (products) => {
         productColone.querySelector('.addTocart').addEventListener('click', (event) => {
             addtocart(event, id, category, image, name, stock)
             animationCart("add", id)
+            samllCart()
         });
 
         procductContainer.append(productColone)

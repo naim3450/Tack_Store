@@ -26,13 +26,30 @@
       <!-- Header Part Start -->
       <nav>
         <div class="container nabver">
-          <h1>Tack Store</h1>
-          <ul style="display: flex;">
+          <div class="bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <h1 class="nabverH1">Tack Store</h1>
+          <div class="rust">
+            <ul style="display: flex;" class="nabverUl">
+              <li>Home</li>
+              <li>About</li>
+              <li><a href="Product.html">Product</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a id="listCardValue" href="addToCart.html"><i class="fa-solid fa-cart-plus"></i> 0</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="small">
+          <ul class="samllUL">
             <li>Home</li>
             <li>About</li>
             <li><a href="Product.html">Product</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a id="cardValue" href="addToCart.html"><i class="fa-solid fa-cart-plus"></i> 0</a></li>
+            <li><a class="samllCart" id="listCardValue" href="addToCart.html"><i class="fa-solid fa-cart-plus"></i>
+                0</a></li>
           </ul>
         </div>
       </nav>
@@ -41,7 +58,7 @@
   </header>
 
   <!-- Bannar part start  -->
-  <main>
+  <main style="width: 100%;">
     <section class="container bennar">
       <div class="contain">
         <h1>Your Destination For Cutting-Edge Gadgets!</h1>
@@ -81,10 +98,11 @@
   <section class="container">
     <h1 class="productT">Chekout Tack Store</h1>
 
-    <section>
+    <section class="ProductPart">
       <div class="procductContainer"></div>
     </section>
   </section>
+
 
 
   <!-- templet section start-->

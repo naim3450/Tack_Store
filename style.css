@@ -20,11 +20,12 @@ button {
 }
 
 .container {
-  width: 70%;
+  width: 1360px;
   margin: auto;
 }
 
 /* All Common Css  End*/
+
 .singLogin {
   display: flex;
   justify-content: space-between;
@@ -37,7 +38,7 @@ button {
   }
 
   & .slbutton {
-    width: 10%;
+    width: 130px;
     justify-content: space-between;
     display: flex;
 
@@ -59,34 +60,44 @@ button {
   justify-content: space-between;
   align-items: center;
   margin-top: 5px;
+}
 
-  & h1 {
-    font-size: 40px;
-    border: 3px solid black;
-    background: -webkit-linear-gradient(#c1baba, #232323);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 5px;
-  }
+.nabverH1 {
+  font-size: 40px;
+  border: 3px solid black;
+  background: -webkit-linear-gradient(#c1baba, #232323);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 5px;
+}
 
-  & ul {
-    font-size: 24px;
-    width: 30%;
-    justify-content: space-between;
-    align-items: center;
+.nabverUl {
+  font-size: 24px;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    & li a {
-      color: black;
-      text-decoration: none;
-    }
+.nabverUl li a {
+  color: black;
+  text-decoration: none;
+}
 
-    & li #cardValue {
-      background: #1b1b1b;
-      color: white;
-      font-size: 18px;
-      padding: 10px 30px;
-      border-radius: 5px;
-    }
+.nabverUl li #listCardValue {
+  background: #1b1b1b;
+  color: white;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.bars {
+  display: none;
+  font-size: 30px;
+
+  & i {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -138,7 +149,7 @@ main {
 
 /* for bennar image animation start */
 .animationImag {
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -270,6 +281,7 @@ main {
 .procductContainer {
   margin-top: 60px;
   display: grid;
+  justify-content: space-between;
   grid-template-columns: auto auto auto;
   gap: 40px;
 }
@@ -366,6 +378,7 @@ main {
 
 
 /* Product part end  */
+
 .cards {
 
   &,
@@ -435,6 +448,50 @@ main {
   }
 }
 
+.animationCart2 {
+  background-image: linear-gradient(to top right, #3d85fa, #4484fb, #679fffce, #b3d1ffc0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 20px #1a1a1a7e;
+  position: fixed;
+  top: 0;
+  right: 0;
+  animation: animationCart 2s linear;
+  -webkit-animation: animationCart 2s linear;
+}
+
+@keyframes animationCart2 {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+
 
 
 
@@ -503,6 +560,513 @@ footer {
   border-radius: 5px;
 }
 
-.hide {
+.small {
   display: none;
+  background-image: linear-gradient(to top right, #3d85fa, #4484fb, #679fffce, #b3d1ffc0);
+  border-top-right-radius: 15px;
 }
+
+
+/* Responsive Part Start */
+@media(width <=1360px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .ProductPart {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  main {
+    margin-top: 10px;
+    height: 600px;
+    width: 100%;
+  }
+
+  /* bennar part start */
+  .bennar {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    & .contain {
+      width: 60%;
+      margin-top: 100px;
+    }
+
+    & .contain p {
+      color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin: 20px 0;
+    }
+
+  }
+
+  /* bennar part end */
+
+  /* cards part start */
+  .cards {
+    width: 380px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+  }
+
+  /* cards part start */
+}
+
+@media(width <=1240px) {
+  .container {
+    padding: 20px;
+  }
+
+  /* cards part start */
+  .cards {
+    width: 350px;
+  }
+
+  /* cards part start */
+}
+
+@media(width <=1140px) {
+  .nabver {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .nabverH1 {
+    font-size: 40px;
+    border: 3px solid black;
+    background: -webkit-linear-gradient(#c1baba, #232323);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 5px;
+  }
+
+  .nabverUl {
+    font-size: 24px;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+  }
+
+  .nabverUl li a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .nabverUl li #listCardValue {
+    background: #1b1b1b;
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 5px;
+  }
+
+  main {
+    height: 550px;
+    margin-top: 0;
+  }
+
+  .bennar {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    & .contain {
+      width: 60%;
+      margin-top: 60px;
+    }
+
+    & .contain h1 {
+      color: #0c67fa;
+      font-size: 45px;
+    }
+
+    & .contain p {
+      color: white;
+      margin: 15px 0;
+    }
+
+    & .contain button {
+      background: #181818;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 16px;
+      color: white;
+    }
+
+    & img {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin-top: 60px;
+    }
+
+  }
+
+  /* cards part start */
+  .cards {
+    width: 330px;
+  }
+
+  /* cards part start */
+}
+
+@media(width <=1100px) {
+
+  /* cards part start */
+  .cards {
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+  }
+
+  /* cards part start */
+}
+
+@media(width <=1024px) {
+  .bennar {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    & .contain {
+      width: 60%;
+      margin-top: 50px;
+    }
+
+    & .contain h1 {
+      color: #0c67fa;
+      font-size: 45px;
+    }
+
+    & .contain p {
+      color: white;
+      margin: 15px 0;
+    }
+
+    & .contain button {
+      background: #181818;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 16px;
+      color: white;
+    }
+
+    & img {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+  }
+
+  .procductContainer {
+    grid-template-columns: auto auto;
+  }
+
+  .container {
+    padding: 20px 50px;
+  }
+
+  /* cards part start */
+  .cards {
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+  }
+
+  /* cards part start */
+}
+
+@media(width <=930px) {
+  main {
+    height: 500px;
+    margin-top: 0;
+  }
+
+  .bennar {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    & .contain {
+      width: 60%;
+      margin-top: 50px;
+    }
+
+    & .contain h1 {
+      color: #0c67fa;
+      font-size: 35px;
+    }
+
+    & .contain p {
+      color: white;
+      margin: 15px 0;
+      font-size: 14px;
+    }
+
+    & .contain button {
+      background: #181818;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 16px;
+      color: white;
+    }
+
+    & img {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+  }
+
+  .container {
+    padding: 10px 30px;
+  }
+
+  /* cards part start */
+  .cards {
+    width: 380px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+  }
+
+  /* cards part start */
+}
+
+@media(width <=860px) {
+  .container {
+    padding: 10px 40px;
+  }
+
+  /* cards part start */
+  .cards {
+    width: 320px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+  }
+
+  /* cards part start */
+}
+
+@media(width <=768px) {
+  main {
+    height: 510px;
+    margin-top: 0;
+    overflow: hidden;
+  }
+
+  .bennar {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+
+    & .contain {
+      width: 70%;
+      text-align: center;
+      margin: 15px auto;
+    }
+
+    & .contain h1 {
+      color: #0c67fa;
+      font-size: 40px;
+    }
+
+    & .contain p {
+      color: white;
+      margin: 15px 0;
+      font-size: 16px;
+    }
+
+    & .contain button {
+      background: #181818;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      color: white;
+    }
+
+    & img {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 50%;
+      margin: auto;
+    }
+
+  }
+
+  .editorial {
+    display: block;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    z-index: 5;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  /* cards part start */
+  .cards {
+    width: 320px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+  }
+
+  /* cards part start */
+}
+
+@media(width <=700px) {
+
+  /* cards part start */
+  .cards {
+    width: 310px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+  }
+
+  /* cards part start */
+}
+
+@media(width <=680px) {
+  .rust {
+    display: none;
+  }
+
+  .nabverH1 {
+    margin: auto;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  .small {
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    top: 0;
+  }
+
+  .samllUL {
+    font-size: 24px;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    display: grid;
+    gap: 15px;
+
+    & li {
+      border-bottom: 1px solid black;
+      width: 400px;
+      padding: 15px;
+    }
+
+    & li a {
+      color: black;
+      text-decoration: none;
+    }
+
+    & li #listCardValue {
+      background: #1b1b1b;
+      color: white;
+      font-size: 18px;
+      padding: 10px 30px;
+      border-radius: 5px;
+    }
+  }
+
+  /* cards part start */
+  .cards {
+    width: 290px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+  }
+
+  /* cards part start */
+}
+
+@media(width <=640px) {
+  .productT {
+    margin-top: 40px;
+    font-size: 35px;
+    margin-left: 90px;
+  }
+
+  .procductContainer {
+    grid-template-columns: auto;
+  }
+
+  .ProductPart {
+    margin: 0 auto;
+    width: 420px;
+  }
+
+  /* cards part start */
+  .cards {
+    width: 420px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+  }
+
+  /* cards part start */
+}
+
+@media(width <=440px) {
+  .editorial {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    z-index: 5;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .procductContainer {
+    grid-template-columns: auto;
+  }
+
+  .ProductPart {
+    margin: 0 auto;
+    width: 420px;
+  }
+
+  /* cards part start */
+  .cards {
+    width: 420px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+  }
+
+  /* cards part start */
+}
+
+/* Responsive Part End */
