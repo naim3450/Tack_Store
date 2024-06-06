@@ -69,7 +69,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./Image/tablet.png",
+        "image": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/tablets/matepad-pro-13-2/img/hero/en-kv/huawei-matepad-pro-13-2-kv@2x.webp",
         "price": 6999,
         "home": true
     },
@@ -80,7 +80,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./Image/iphone11.png",
+        "image": "https://i.ebayimg.com/images/g/WRgAAOSw7YdiA29R/s-l500.jpg",
         "price": 7999
     },
     {
@@ -90,7 +90,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./Image/laptop.png",
+        "image": "https://s.alicdn.com/@sc04/kf/Hab73bee67fff48f6a1c1b5d94b0b93ba4.jpg",
         "price": 8999
     },
     {
@@ -100,7 +100,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./Image/iphone15.png",
+        "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSZMxBDg5liUTSED62AYQHXSe4TYrbZ3xtpE1HNEVdqMtJ81tfKRDIehqwoADgLT7gQH6GlTFQEVElLAe1lZDjABTYqlwK5",
         "price": 9999
     },
     {
@@ -110,7 +110,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./Image/pc.png",
+        "image": "https://www.shopz.com.bd/wp-content/uploads/2021/10/Xiaomi-Mi-P1-43-inch-Ultra-HD-4K-Smart-LED-TV.jpg",
         "price": 10000,
         "home": true
     },
@@ -121,7 +121,7 @@
         "Brand": "xyz",
         "stock": 11000,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./Image/phoneWatch.png",
+        "image": "https://cdn.bdstall.com/product-image/giant_215726.jpg",
         "price": 11000,
         "home": true
     },
@@ -132,7 +132,7 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./Image/headphone.png",
+        "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MUW33?wid=890&hei=890&fmt=jpeg&qlt=90&.v=1712255584823",
         "price": 800
     },
     {
@@ -142,17 +142,17 @@
         "Brand": "xyz",
         "stock": 10,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./Image/speaker.png",
+        "image": "https://m.media-amazon.com/images/I/81n7KAYovTL._AC_SL1500_.jpg",
         "price": 14500
     },
     {
         "id": 15,
-        "name": "Desktop",
-        "category": "desktop",
+        "name": "AC",
+        "category": "Air Conditioner",
         "Brand": "xyz",
         "stock": 8,
         "description": "A tv, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
-        "image": "./Image/Desktop.png",
+        "image": "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/global/images-for-blog/How-Much-Electricity-Does-an-Air-Conditioner-Use.jpg",
         "price": 94500
     }
 ]
