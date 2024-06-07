@@ -26,13 +26,31 @@
             <!-- Header Part Start -->
             <nav>
                 <div class="container nabver">
-                    <h1><a href="index.html">Tack Store</a></h1>
-                    <ul style="display: flex;">
+                    <div class="bars">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <h1 class="nabverH1"><a href="index.html">Tack Store</a></h1>
+                    <div class="rust">
+                        <ul style="display: flex;" class="nabverUl">
+                            <li><a href="index.html">Home</a></li>
+                            <li>About</li>
+                            <li><a href="Product.html">Product</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a id="listCardValue"><i class="fa-solid fa-cart-plus"></i> 0</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="small">
+                    <ul class="samllUL">
                         <li><a href="index.html">Home</a></li>
                         <li>About</li>
                         <li><a href="Product.html">Product</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a id="listCardValue"><i class="fa-solid fa-cart-plus"></i> 0</a></li>
+                        <li><a class="samllCart" id="listCardValue" href="addToCart.html">
+                                <i class="fa-solid fa-cart-plus"></i> 0
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -41,10 +59,7 @@
     </header>
 
     <div class="container" style="border-radius: 10px; margin-top: 20px; display: grid; justify-items: stretch;">
-        <!-- <div class="animationParent" style="justify-self: end; justify-items: stretch; margin-bottom: 30px;">
-        </div> -->
         <div class="productCartContainer" style="display: grid; gap: 20px;"></div>
-        </section>
     </div>
 
 
@@ -55,7 +70,7 @@
                 <div class="imgContainer">
                     <img src="/public/vite.svg" alt="" class="productImage">
                 </div>
-                <h2 class="productName">Computer</h2>
+                <h2 class="productName"></h2>
 
                 <div class="pricrElm">
                     <p class="productPrice"></p>

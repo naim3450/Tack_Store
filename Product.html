@@ -26,13 +26,34 @@
             <!-- Header Part Start -->
             <nav>
                 <div class="container nabver">
-                    <h1><a href="index.html">Tack Store</a></h1>
-                    <ul style="display: flex;">
-                        <li><a href="index.html">Home</a></li>
+                    <div class="bars">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <h1 class="nabverH1"><a href="index.html">Tack Store</a></h1>
+                    <div class="rust">
+                        <ul style="display: flex;" class="nabverUl">
+                            <li><a href="index.html">Home</a></li>
+                            <li>About</li>
+                            <li>Product</li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a id="listCardValue" href="addToCart.html"><i class="fa-solid fa-cart-plus"></i> 0</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="small">
+                    <ul class="samllUL">
+                        <li><a href="index.html">Home   </a></li>
                         <li>About</li>
-                        <li>Product</li>
+                        <li><a href="Product.html">Product</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a id="listCardValue" href="addToCart.html"><i class="fa-solid fa-cart-plus"></i> 0</a></li>
+                        <li>
+                            <a class="samllCart" id="listCardValue" href="addToCart.html">
+                                <i class="fa-solid fa-cart-plus"></i> 0
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -49,7 +70,7 @@
             <!-- <input type="text" class="search" placeholder="Search"> -->
 
         </div>
-        <section>
+        <section class="ProductPart">
             <div class="procductContainer"></div>
         </section>
     </section>

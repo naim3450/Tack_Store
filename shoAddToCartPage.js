@@ -4,6 +4,7 @@ import { animationCart } from './animationCart';
 import { getProducarcFLS } from './getProducarcFLS';
 import { reducePrice } from './reducePrice';
 import { removeCart } from './remove';
+import { samllCart } from './smallCart';
 import { updateCartValue } from "./updateCartValue"
 
 let cartProduct = getProducarcFLS()
@@ -51,5 +52,24 @@ cartProduct.filter((element) => {
 })
 
 reducePrice()
+
+
+let menu = false
+
+let bars = document.querySelector('.bars')
+let small = document.querySelector('.small')
+
+bars.addEventListener('click', () => {
+    menu = !menu
+    if (menu == true) {
+        bars.innerHTML = `<i class="fa-solid fa-xmark"></i>`
+        small.style.display = `block`
+        small.classList.add('animationCart2')
+        samllCart()
+    } else {
+        bars.innerHTML = `<i class="fa-solid fa-bars"></i>`
+        small.style.display = `none`
+    }
+})
 
 

@@ -714,7 +714,94 @@ footer {
   /* cards part start */
   .cards {
     width: 330px;
+    /* height: 500px; */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+
+    & .information {
+      width: 100%;
+      height: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      & span {
+        background: black;
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+      }
+
+      & .imgContainer img {
+        width: 100%;
+        height: 280px;
+        margin: 15px 0;
+
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+
+      }
+
+      & .productName {
+        margin-bottom: 5px;
+      }
+
+      & .productDescribtion {
+        color: #838383;
+        margin: 8px 0;
+      }
+
+      & .pricrElm {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        font-size: 20px;
+      }
+
+      & .productQuantityElm {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+
+        & .stoctElm {
+          display: flex;
+        }
+
+        & .stoctElm button {
+          border: 1px solid #232323;
+          padding: 5px;
+          font-size: 16px;
+          font-weight: 700;
+          width: 50px;
+        }
+
+        & .stoctElm p {
+          border: 1px solid #232323;
+          padding: 5px;
+          font-weight: 700;
+          width: 50px;
+          text-align: center;
+        }
+      }
+
+      & .addTocart {
+        background: #1a1a1a;
+        color: whitesmoke;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 8px;
+      }
+
+      & .productRting i {
+        color: rgb(255, 206, 27);
+        font-size: 10px;
+      }
+    }
   }
+
 
   /* cards part start */
 }
@@ -724,9 +811,94 @@ footer {
   /* cards part start */
   .cards {
     width: 300px;
+    /* height: 500px; */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+
+    & .information {
+      width: 100%;
+      height: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      & span {
+        background: black;
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+      }
+
+      & .imgContainer img {
+        width: 100%;
+        height: 250px;
+        margin: 10px 0;
+
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+
+      }
+
+      & .productName {
+        margin-bottom: 0px;
+        font-size: 22px;
+      }
+
+      & .productDescribtion {
+        color: #838383;
+        margin: 5px 0;
+        font-size: 14px;
+      }
+
+      & .pricrElm {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        font-size: 16px;
+      }
+
+      & .productQuantityElm {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+
+        & .stoctElm {
+          display: flex;
+        }
+
+        & .stoctElm button {
+          border: 1px solid #232323;
+          padding: 3px;
+          font-size: 16px;
+          font-weight: 700;
+          width: 45px;
+        }
+
+        & .stoctElm p {
+          border: 1px solid #232323;
+          padding: 3px;
+          font-weight: 700;
+          width: 45px;
+          text-align: center;
+        }
+      }
+
+      & .addTocart {
+        background: #1a1a1a;
+        color: whitesmoke;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 8px;
+      }
+
+      & .productRting i {
+        color: rgb(255, 206, 27);
+        font-size: 10px;
+      }
+    }
   }
 
   /* cards part start */
@@ -782,10 +954,94 @@ footer {
   /* cards part start */
   .cards {
     width: 400px;
+    /* height: 500px; */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+
+    & .information {
+      width: 100%;
+      height: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      & span {
+        background: black;
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+      }
+
+      & .imgContainer img {
+        width: 100%;
+        height: 330px;
+        margin: 15px 0;
+
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+
+      }
+
+      & .productName {
+        margin-bottom: 5px;
+      }
+
+      & .productDescribtion {
+        color: #838383;
+        margin: 10px 0;
+      }
+
+      & .pricrElm {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        font-size: 22px;
+      }
+
+      & .productQuantityElm {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+
+        & .stoctElm {
+          display: flex;
+        }
+
+        & .stoctElm button {
+          border: 1px solid #232323;
+          padding: 5px;
+          font-size: 18px;
+          font-weight: 700;
+          width: 60px;
+        }
+
+        & .stoctElm p {
+          border: 1px solid #232323;
+          padding: 5px;
+          font-weight: 700;
+          width: 60px;
+          text-align: center;
+        }
+      }
+
+      & .addTocart {
+        background: #1a1a1a;
+        color: whitesmoke;
+        padding: 15px 25px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+
+      & .productRting i {
+        color: rgb(255, 206, 27);
+        font-size: 10px;
+      }
+    }
   }
+
 
   /* cards part start */
 }
@@ -857,10 +1113,95 @@ footer {
 
   /* cards part start */
   .cards {
-    width: 320px;
+    width: 325px;
+    /* height: 500px; */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+
+    & .information {
+      width: 100%;
+      height: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      & span {
+        background: black;
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+      }
+
+      & .imgContainer img {
+        width: 100%;
+        height: 250px;
+        margin: 10px 0;
+
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+
+      }
+
+      & .productName {
+        margin-bottom: 0px;
+        font-size: 22px;
+      }
+
+      & .productDescribtion {
+        color: #838383;
+        margin: 5px 0;
+        font-size: 14px;
+      }
+
+      & .pricrElm {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        font-size: 16px;
+      }
+
+      & .productQuantityElm {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+
+        & .stoctElm {
+          display: flex;
+        }
+
+        & .stoctElm button {
+          border: 1px solid #232323;
+          padding: 3px;
+          font-size: 16px;
+          font-weight: 700;
+          width: 45px;
+        }
+
+        & .stoctElm p {
+          border: 1px solid #232323;
+          padding: 3px;
+          font-weight: 700;
+          width: 45px;
+          text-align: center;
+        }
+      }
+
+      & .addTocart {
+        background: #1a1a1a;
+        color: whitesmoke;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 8px;
+      }
+
+      & .productRting i {
+        color: rgb(255, 206, 27);
+        font-size: 10px;
+      }
+    }
   }
 
   /* cards part start */
@@ -1030,9 +1371,92 @@ footer {
   /* cards part start */
   .cards {
     width: 420px;
+    /* height: 500px; */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+
+    & .information {
+      width: 100%;
+      height: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      & span {
+        background: black;
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+      }
+
+      & .imgContainer img {
+        width: 100%;
+        height: 330px;
+        margin: 15px 0;
+
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+
+      }
+
+      & .productName {
+        margin-bottom: 5px;
+      }
+
+      & .productDescribtion {
+        color: #838383;
+        margin: 10px 0;
+      }
+
+      & .pricrElm {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        font-size: 22px;
+      }
+
+      & .productQuantityElm {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+
+        & .stoctElm {
+          display: flex;
+        }
+
+        & .stoctElm button {
+          border: 1px solid #232323;
+          padding: 5px;
+          font-size: 18px;
+          font-weight: 700;
+          width: 60px;
+        }
+
+        & .stoctElm p {
+          border: 1px solid #232323;
+          padding: 5px;
+          font-weight: 700;
+          width: 60px;
+          text-align: center;
+        }
+      }
+
+      & .addTocart {
+        background: #1a1a1a;
+        color: whitesmoke;
+        padding: 15px 25px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+
+      & .productRting i {
+        color: rgb(255, 206, 27);
+        font-size: 10px;
+      }
+    }
   }
 
   /* cards part start */

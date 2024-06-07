@@ -35,7 +35,7 @@ button {
   }
 
   & .slbutton {
-    width: 10%;
+    width: 130px;
     justify-content: space-between;
     display: flex;
   }
@@ -56,35 +56,35 @@ button {
   justify-content: space-between;
   align-items: center;
   margin-top: 5px;
+}
 
-  & h1 {
-    font-size: 40px;
-    border: 3px solid black;
-    background: -webkit-linear-gradient(#c1baba, #232323);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 5px;
-  }
+.nabverH1 {
+  font-size: 40px;
+  border: 3px solid black;
+  background: -webkit-linear-gradient(#c1baba, #232323);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 5px;
+}
 
-  & ul {
-    font-size: 24px;
-    width: 30%;
-    justify-content: space-between;
-    align-items: center;
+.nabverUl {
+  font-size: 24px;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    & li a {
-      color: black;
-      text-decoration: none;
-    }
+.nabverUl li a {
+  color: black;
+  text-decoration: none;
+}
 
-    & li #cardValue {
-      background: #1b1b1b;
-      color: white;
-      font-size: 18px;
-      padding: 10px 30px;
-      border-radius: 5px;
-    }
-  }
+.nabverUl li #listCardValue {
+  background: #1b1b1b;
+  color: white;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 5px;
 }
 
 
@@ -174,6 +174,7 @@ button {
   border: 4px solid#1a1a1a;
   justify-self: end;
 
+
   & p {
     margin-top: 30px;
   }
@@ -181,6 +182,7 @@ button {
   & h5 {
     color: black;
     font-size: 24px;
+    margin-top: 30px;
   }
 }
 
@@ -285,3 +287,545 @@ footer {
 }
 
 /* Footer Part End */
+
+.small {
+  display: none;
+  background-image: linear-gradient(to top right, #3d85fa, #4484fb, #679fffce, #b3d1ffc0);
+  border-top-right-radius: 15px;
+}
+
+.bars {
+  display: none;
+  font-size: 30px;
+  /* margin-left: 20px; */
+}
+
+.animationCart2 {
+  background-image: linear-gradient(to top right, #3d85fa, #4484fb, #679fffce, #b3d1ffc0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 20px #1a1a1a7e;
+  position: fixed;
+  top: 0;
+  right: 0;
+  animation: animationCart 2s linear;
+  -webkit-animation: animationCart 2s linear;
+}
+
+@keyframes animationCart2 {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+
+@media(width <=1050px) {
+  .cards {
+    width: 100%;
+
+    & .information {
+      width: 100%;
+      height: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+
+      & span {
+        background: black;
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+      }
+
+      & .imgContainer img {
+        width: 130px;
+      }
+
+      & .productName {
+        /* margin-bottom: 5px; */
+      }
+
+      & .pricrElm {
+        display: flex;
+        /* width: ; */
+        justify-content: space-between;
+        font-size: 20px;
+      }
+
+      & .productQuantityElm {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+
+        & .stoctElm {
+          display: flex;
+        }
+
+        & .stoctElm button {
+          border: 1px solid #232323;
+          padding: 5px;
+          font-size: 18px;
+          font-weight: 700;
+          width: 50px;
+        }
+
+        & .stoctElm p {
+          border: 1px solid #232323;
+          padding: 5px;
+          font-weight: 700;
+          width: 50px;
+          text-align: center;
+        }
+      }
+
+      & .removeCart {
+        background: #1a1a1a;
+        color: whitesmoke;
+        padding: 15px 25px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+/* responsive part start */
+@media(width <=1024px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .singLogin {
+    padding: 10px;
+  }
+
+  .productCartContainer {
+    width: 90%;
+    margin: auto;
+  }
+
+  #Price {
+    margin: 20px auto;
+  }
+}
+
+
+@media(width <=850px) {
+  .cards {
+    width: 100%;
+
+    & .information {
+      width: 100%;
+      height: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+
+      & span {
+        background: black;
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+      }
+
+      & .imgContainer img {
+        width: 130px;
+      }
+
+      & .productName {
+        font-size: 20px;
+      }
+
+      & .pricrElm {
+        display: flex;
+        /* width: ; */
+        justify-content: space-between;
+        font-size: 20px;
+      }
+
+      & .productQuantityElm {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+
+        & .stoctElm {
+          display: flex;
+        }
+
+        & .stoctElm button {
+          border: 1px solid #232323;
+          padding: 5px;
+          font-size: 18px;
+          font-weight: 700;
+          width: 40px;
+        }
+
+        & .stoctElm p {
+          border: 1px solid #232323;
+          padding: 5px;
+          font-weight: 700;
+          width: 40px;
+          text-align: center;
+        }
+      }
+
+      & .removeCart {
+        background: #1a1a1a;
+        color: whitesmoke;
+        padding: 15px 25px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media(width <=800px) {
+  .cards {
+    width: 100%;
+
+    & .information {
+      width: 100%;
+      height: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+      position: relative;
+
+      & span {
+        background: black;
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+      }
+
+      & .imgContainer img {
+        width: 130px;
+      }
+
+      & .productName {
+        font-size: 20px;
+        display: none;
+      }
+
+      & .pricrElm {
+        display: flex;
+        /* width: ; */
+        justify-content: space-between;
+        font-size: 20px;
+      }
+
+      & .productQuantityElm {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+
+        & .stoctElm {
+          display: flex;
+        }
+
+        & .stoctElm button {
+          border: 1px solid #232323;
+          padding: 5px;
+          font-size: 18px;
+          font-weight: 700;
+          width: 40px;
+        }
+
+        & .stoctElm p {
+          border: 1px solid #232323;
+          padding: 5px;
+          font-weight: 700;
+          width: 40px;
+          text-align: center;
+        }
+      }
+
+      & .removeCart {
+        background: #1a1a1a;
+        color: whitesmoke;
+        padding: 15px 25px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media(width <=680px) {
+  .container {
+    padding: 20px;
+  }
+
+  .productCartContainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .rust {
+    display: none;
+  }
+
+  .nabverH1 {
+    margin: auto;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  .small {
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    top: 0;
+  }
+
+  .samllUL {
+    font-size: 24px;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    display: grid;
+    gap: 15px;
+
+    & li {
+      border-bottom: 1px solid black;
+      width: 400px;
+      padding: 15px;
+    }
+
+    & li a {
+      color: black;
+      text-decoration: none;
+    }
+
+    & li #listCardValue {
+      background: #1b1b1b;
+      color: white;
+      font-size: 18px;
+      padding: 10px 30px;
+      border-radius: 5px;
+    }
+  }
+
+  .cards {
+    width: 100%;
+
+    & .information {
+      width: 100%;
+      height: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+      position: relative;
+
+      & span {
+        background: black;
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+      }
+
+      & .imgContainer img {
+        width: 100px;
+      }
+
+      & .productName {
+        font-size: 20px;
+        display: none;
+      }
+
+      & .pricrElm {
+        display: flex;
+        /* width: ; */
+        justify-content: space-between;
+        font-size: 20px;
+      }
+
+      & .productQuantityElm {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+
+        & .stoctElm {
+          display: flex;
+        }
+
+        & .stoctElm button {
+          border: 1px solid #232323;
+          padding: 3px;
+          font-size: 18px;
+          font-weight: 700;
+          width: 30px;
+        }
+
+        & .stoctElm p {
+          border: 1px solid #232323;
+          padding: 3px;
+          font-weight: 700;
+          width: 30px;
+          text-align: center;
+        }
+      }
+
+      & .removeCart {
+        background: #1a1a1a;
+        color: whitesmoke;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  #Price {
+    font-size: 18px;
+    padding: 20px;
+    color: gray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 300px;
+    margin-top: 30px;
+    border: 4px solid#1a1a1a;
+    justify-self: end;
+
+
+    & p {
+      margin-top: 20px;
+    }
+
+    & h5 {
+      color: black;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+@media (width <=600px) {
+
+  .cards {
+    width: 100%;
+
+    & .information {
+      width: 100%;
+      height: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.376);
+      position: relative;
+
+      & span {
+        display: none;
+      }
+
+      & .imgContainer img {
+        width: 100px;
+      }
+
+      & .productName {
+        display: none;
+      }
+
+      & .pricrElm {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+      }
+
+      & .productQuantityElm {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .stoctElm {
+          display: flex;
+        }
+
+        & .stoctElm button {
+          border: 1px solid #232323;
+          padding: 3px;
+          font-size: 14px;
+          font-weight: 700;
+          width: 30px;
+        }
+
+        & .stoctElm p {
+          border: 1px solid #232323;
+          padding: 3px;
+          font-weight: 700;
+          font-size: 14px;
+          width: 30px;
+          text-align: center;
+        }
+      }
+
+      & .removeCart {
+        background: #1a1a1a;
+        color: whitesmoke;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+/* responsive part end */

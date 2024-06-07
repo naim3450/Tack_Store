@@ -1,6 +1,7 @@
 import { addtocart } from "./addtocart";
 import { animationCart } from './animationCart';
 import { homeQuantityToggle } from "./homeQuantityToggle";
+import { samllCart } from "./smallCart";
 
 const procductContainer = document.querySelector('.procductContainer')
 const productTemplet = document.getElementById('productTemplet')
@@ -20,7 +21,7 @@ export const showProductContainer = (products) => {
     //     })
     // })
 
-    
+
     products.filter((curentElm) => {
         const { id, category, image, name, description, price, stock } = curentElm
         const productColone = document.importNode(productTemplet.content, true);
@@ -38,6 +39,7 @@ export const showProductContainer = (products) => {
         productColone.querySelector('.addTocart').addEventListener('click', (event) => {
             addtocart(event, id, category, image, name, stock)
             animationCart("add", id)
+            samllCart()
         });
 
         procductContainer.append(productColone)
